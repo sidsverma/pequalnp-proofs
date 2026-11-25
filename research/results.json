@@ -1,0 +1,37 @@
+{
+  "status": "Partial research only. No full posted task proved, no upstream pull request submitted, and no project contribution credit claimed.",
+  "base_commit": "24cba0a7e1ae4cd6cda51292ac2c28289dfcc387",
+  "lean": "4.36.0",
+  "results": [
+    {
+      "file": "Lower89.lean",
+      "result": "Every representing circuit for the specified 45-by-45 cycle-family matrix has at least 90 gates.",
+      "verification": "Lean checked; standard axioms only.",
+      "limitation": "Task L-meta-10075 asks for at least 100 gates; this result does not solve it."
+    },
+    {
+      "file": "Threshold16.lean",
+      "result": "An explicit 16-gate AND/OR circuit computes threshold-two on seven inputs; it replaces any candidate of at least 16 gates. A NOT-free circuit is its own replacement.",
+      "verification": "Lean checked; standard axioms only.",
+      "limitation": "Does not settle the at-most-15-gate cases in L-meta-10453."
+    },
+    {
+      "file": "OneNotObservations.lean",
+      "result": "Two semantic conditions allow a single NOT output to be replaced by a constant.",
+      "verification": "Lean checked."
+    },
+    {
+      "file": "OneNotCircuitReplacement.lean",
+      "result": "The two semantic conditions give actual circuit replacements with equal gate count and no NOT gates.",
+      "verification": "Lean checked; standard axioms only."
+    },
+    {
+      "file": "upper104.json",
+      "result": "An explicit 104-gate circuit for the 45-by-45 matrix.",
+      "verification": "Evaluated on all 2025 promised inputs.",
+      "limitation": "The auxiliary Lean check was stopped without a verdict. This is computational evidence, not a checked theorem."
+    }
+  ],
+  "search_outcomes": "No counterexample was found. Full-problem SAT timeouts are inconclusive; local-window UNSAT results apply only to their restricted encodings.",
+  "excluded": "Unfinished proofs, placeholder files, compiled artifacts, credentials, lease identifiers, and toolchain/cache downloads are not included."
+}

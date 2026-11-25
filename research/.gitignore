@@ -1,0 +1,12 @@
+.venv/
+search_cycle
+search_threshold
+cycle-k*-s*.json
+path-k*-s*.json
+cycle-witness.txt
+path-witness.txt
+threshold-best-*.txt
+threshold-witness-*.txt
+threshold7-s*-not*.json
+threshold-window-witness.json
+threshold-window-validation.json
